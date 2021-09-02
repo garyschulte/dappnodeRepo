@@ -1,0 +1,16 @@
+{
+  "name": "besu.public.dappnode.eth",
+  "version": "0.1.0",
+  "upstreamVersion": "21.7.3-SNAPSHOT",
+  "upstreamRepo": "hyperledger/besu",
+  "description": "hyperledger besu dappnode package",
+  "type": "library",
+  "architectures": ["linux/amd64"],
+  "author": "Gary Schulte <gary.schulte@consensys.net> (https://github.com/garyschulte)",
+  "categories": ["Developer tools"],
+  "keywords": ["ethereum", "besu"],
+  "links": {
+    "homepage": "https://besu.hyperledger.org/"
+  },
+  "license": "Apache-2.0"
+}

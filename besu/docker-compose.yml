@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+  besu.public.dappnode.eth:
+    build:
+      context: ./build
+      args:
+        UPSTREAM_VERSION: 21.7.3-SNAPSHOT
+    image: "besu.public.dappnode.eth:0.1.0"
+    restart: unless-stopped
+    volumes:
+      - "besu:/besu"
+    ports:
+      - "40303"
+      - 40303/udp
+volumes:
+  besu: {}
