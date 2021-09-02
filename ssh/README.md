@@ -83,4 +83,4 @@ and then in your browser you can hit [http://localhost:8080](http://localhost:80
 ## Do Not Leave This Package Installed
 It is bad security hygiene at best.  But handy in a pinch.
 
-![hold onto your butts](https://pics.me.me/hold-onto-your-butts-memegenerator-net-hold-onto-your-butts-49631627.png)
+![hold onto your butts](https://memegenerator.net/img/instances/74885411/hold-on-to-your-butts.jpg)
