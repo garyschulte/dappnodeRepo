@@ -1,5 +1,5 @@
 {
-  "name": "besu.public.dappnode.eth",
+  "name": "besu.dappnode.eth",
   "version": "0.1.0",
   "upstreamVersion": "21.7.3-SNAPSHOT",
   "upstreamRepo": "hyperledger/besu",
