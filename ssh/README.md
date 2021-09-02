@@ -1,7 +1,5 @@
 # openssh dappnode package
 
-![ak-47]( https://memegenerator.net/img/instances/56811901/ak-47-the-very-best-there-is-when-you-absolutely-positively-got-to-kill-every-motherfucker-in-the-ro.jpg)
-
 ## The nuclear option for remote access to a dappnode
 
 If you have a remote dappnode, and do not have access to ssh, you can install this incredibly dangerous package to allow you to use dappnode as a bastion host to get to the rest of your remote network and to port forward.
@@ -16,23 +14,44 @@ tl/dr:
 * `dappnodesdk build`
 * follow the http link at the end of the build to install your package
 
+example build output:
+```
+➜  ssh git:(main) ✗ dappnodesdk build
+  ✔ Verify connection
+  ✔ Create release dir
+  ✔ Copy files and validate
+  ✔ Build docker image
+  ✔ Save and compress image
+  ✔ Upload release to IPFS node
+  ✔ Save upload results
+
+  DNP (DAppNode Package) built and uploaded
+  Release hash : /ipfs/QmW3zUxqQe4UYsntBLwo3ESYvb5XNgnMPFkmwKNCkw4G5e
+  http://my.dappnode/#/installer/%2Fipfs%2FQmW3zUxqQe4UYsntBLwo3ESYvb5XNgnMPFkmwKNCkw4G5e
+```
+
 
 ## Connecting to the node
 
-You will be able to connect to a docker instance that is running openssh.  The ssh port is exposed as `2222`, so for example:
+You will be able to connect to a docker instance that is running openssh.  The ssh port is exposed as `2222`, the user is `unsafe` and the password is `password`.  So for example:
 ```
-xx  ssh unsafe@ssh.dappnode -p 2222
-unsafe@172.33.0.14's password:
+➜  ssh git:(main) ✗ ssh unsafe@ssh.dappnode -p 2222
+The authenticity of host '[ssh.dappnode]:2222 ([172.33.0.14]:2222)' can't be established.
+ECDSA key fingerprint is SHA256:0YFanY9tcWtT4DL9iOt7fMcudMw11s4XBnI8zdAZ/jk.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[ssh.dappnode]:2222,[172.33.0.14]:2222' (ECDSA) to the list of known hosts.
+unsafe@ssh.dappnode's password:
 Welcome to OpenSSH Server
-:w
 
-2d4b927201e3:~$
-````
+337cb2cacf64:~$
+```
+
+et voila, you are in.
 
 Once you are there, you should be able to ssh to any other host on your network, e.g.:
 ```
-2d4b927201e3:~$ ssh dappnode@192.168.0.110
-dappnode@192.168.0.110's password:
+2d4b927201e3:~$ ssh dappnode@192.168.1.100
+dappnode@192.168.1.100's password:
 Linux dappnode 5.10.0-8-amd64 #1 SMP Debian 5.10.46-4 (2021-08-03) x86_64
  ___   _             _  _         _
 |   \ /_\  _ __ _ __| \| |___  __| |___
@@ -49,7 +68,8 @@ Access your DAppNode at http://my.dappnode
 
 Discover more ways to connect to your DAppNode at http://welcome.dappnode
 
-dappnode@dappnode:~$```
+dappnode@dappnode:~$
+```
 
 
 ### port forwarding to a different host in your network
@@ -62,3 +82,5 @@ and then in your browser you can hit [http://localhost:8080](http://localhost:80
 
 ## Do Not Leave This Package Installed
 It is bad security hygiene at best.  But handy in a pinch.
+
+![hold onto your butts](https://pics.me.me/hold-onto-your-butts-memegenerator-net-hold-onto-your-butts-49631627.png)

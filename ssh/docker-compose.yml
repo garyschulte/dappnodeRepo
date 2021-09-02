@@ -2,7 +2,7 @@ version: "3.4"
 services:
   ssh.public.dappnode.eth:
     build: .
-    image: "ssh.public.dappnode.eth:0.1.0"
+    image: "ssh.public.dappnode.eth.ssh.dappnode.eth:0.1.0"
     container_name: openssh-server
     hostname: openssh-server
     environment:
