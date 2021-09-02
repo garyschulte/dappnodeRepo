@@ -3,6 +3,16 @@ services:
   ssh.public.dappnode.eth:
     build: .
     image: "ssh.public.dappnode.eth:0.1.0"
-    restart: unless-stopped
+    container_name: openssh-server
+    hostname: openssh-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - SUDO_ACCESS=false
+      - PASSWORD_ACCESS=true
+      - USER_PASSWORD=password
+      - USER_NAME=unsafe
     ports:
-      - "22"
+      - "2222:2222"
+    restart: unless-stopped

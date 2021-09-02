@@ -1,12 +1,14 @@
 {
-  "name": "ssh.public.dappnode.eth",
+  "name": "ssh.dappnode.eth",
   "version": "0.1.0",
-  "description": "ssh.public.dappnode.eth description",
+  "upstreamRepo": "linuxserver/docker-openssh-server",
+  "shortDescription": "openssh server which enables port forwarding",
+  "description": "This is an sshd dappnode package so you can connect to your dappnode network remotely via vpn if you haven't enabled ssh forwarding on your router.  TcpAllowRemote is enabled which should allow your to port-forward to other devices on the remote network (like say to your router so you can enable ssh port forwarding on the router).  It goes without saying this is dangerous and should only be used temporarily in a pinch, and removed after you complete what you are trying to accomplish from remote.  Once installed you should be able to `ssh unsafe@ssh.dappnode -p 2222` when connected to vpn.  see README.md on github for more detail",
   "type": "service",
   "author": "garyschulte",
   "categories": ["Developer tools"],
   "links": {
-    "homepage": "https://your-project-homepage-or-docs.io"
+    "homepage": "https://github.com/dappnoderepo/tree/main/ssh"
   },
   "license": "GLP-3.0"
 }
