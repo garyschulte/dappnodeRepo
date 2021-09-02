@@ -14,6 +14,6 @@ services:
     ports:
       - "40303"
       - 40303/udp
-      - 18545/tcp
+      - "18545"
 volumes:
   besu: {}
