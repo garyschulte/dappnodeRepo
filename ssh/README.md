@@ -2,7 +2,7 @@
 
 ## The nuclear option for remote access to a dappnode
 
-If you have a remote dappnode, and do not have access to ssh, you can install this incredibly dangerous package to allow you to use dappnode as a bastion host to get to the rest of your remote network and to port forward.
+If you have a remote dappnode and a VPN connecetion to it but do not have access to ssh or other necessary remote network resources, you can install this incredibly dangerous package to allow you to use dappnode as a bastion host to get to the rest of your remote network.
 
 ## Build and Install
 
