@@ -1,0 +1,19 @@
+version: "2"
+fields:
+  - id: network,
+    target:
+      type: environment
+      name: TEKU_NETWORK
+      service: teku.public.dappnode.eth
+    title: eth2 network
+    description: >-
+      eth2 network for teku to participate on (mainnet, prater, pyrmont)
+    secret: false
+    pattern: "^(mainnet|pyrmont|prater)$"
+    patternErrorMessage: Must be a supported network
+    enum:
+      - mainnet
+      - prater
+      - pyrmont
+    required: true
+    if: { "mode": { "enum": ["advanced"] } }

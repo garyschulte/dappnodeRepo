@@ -1,0 +1,12 @@
+{
+  "name": "teku.public.dappnode.eth",
+  "version": "0.1.0",
+  "description": "teku.public.dappnode.eth description",
+  "type": "service",
+  "author": "garyschulte",
+  "categories": ["Developer tools"],
+  "links": {
+    "homepage": "https://your-project-homepage-or-docs.io"
+  },
+  "license": "Apache-2.0"
+}
