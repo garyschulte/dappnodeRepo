@@ -3,7 +3,7 @@ FROM hyperledger/besu:21.7.3-SNAPSHOT
 # Expose offset services ports
 # 8545 HTTP JSON-RPC
 # 40303 P2P
-EXPOSE 8545 40303
+EXPOSE 8545 9545 40303
 
 USER root
 RUN mkdir /besu  && chown besu:besu /besu

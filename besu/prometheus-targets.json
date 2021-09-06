@@ -1,0 +1,12 @@
+[
+    {
+        "labels": {
+            "package": "besu.public.dappnode.eth",
+            "service": "besu.public.dappnode.eth",
+            "__metrics_path__": "/debug/metrics/prometheus"
+        },
+        "targets": [
+            "teku.public.dappnode:9545"
+        ]
+    }
+]
