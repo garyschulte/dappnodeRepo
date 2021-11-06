@@ -4,8 +4,8 @@ services:
     build:
       context: ./build
       args:
-        UPSTREAM_VERSION: 21.8.2
-    image: "teku.public.dappnode.eth:0.1.0"
+        UPSTREAM_VERSION: 21.10.1
+    image: "teku.public.dappnode.eth:0.1.2"
     restart: unless-stopped
     volumes:
       - "teku:/teku"

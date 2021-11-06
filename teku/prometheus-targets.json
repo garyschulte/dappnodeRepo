@@ -3,10 +3,10 @@
         "labels": {
             "package": "teku.public.dappnode.eth",
             "service": "teku.public.dappnode.eth",
-            "__metrics_path__": "/debug/metrics/prometheus"
+            "__metrics_path__": "/metrics"
         },
         "targets": [
-            "teku.public.dappnode:8008"
+            "teku.public.dappnode.eth:8008"
         ]
     }
 ]

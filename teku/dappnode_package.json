@@ -1,6 +1,6 @@
 {
   "name": "teku.public.dappnode.eth",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "teku.public.dappnode.eth description",
   "type": "service",
   "author": "garyschulte",

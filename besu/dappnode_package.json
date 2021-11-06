@@ -1,7 +1,7 @@
 {
   "name": "besu.public.dappnode.eth",
-  "version": "0.1.0",
-  "upstreamVersion": "21.7.3-SNAPSHOT",
+  "version": "0.1.2",
+  "upstreamVersion": "21.10.0",
   "upstreamRepo": "hyperledger/besu",
   "description": "hyperledger besu dappnode package",
   "type": "library",
