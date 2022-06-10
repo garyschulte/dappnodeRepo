@@ -1,4 +1,4 @@
-FROM hyperledger/besu:21.10.0
+FROM hyperledger/besu:22.4.3-SNAPSHOT
 
 # Expose offset services ports
 # 8545 HTTP JSON-RPC
