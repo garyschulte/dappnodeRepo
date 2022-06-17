@@ -1,9 +1,9 @@
 {
-  "name": "besu.public.dappnode.eth",
-  "version": "22.4.3",
-  "upstreamVersion": "22.4.3",
+  "name": "besu-ropsten.public.dappnode.eth",
+  "version": "22.7.0",
+  "upstreamVersion": "22.7.0",
   "upstreamRepo": "hyperledger/besu",
-  "description": "hyperledger besu dappnode package",
+  "description": "hyperledger besu dappnode package for ropsten",
   "type": "library",
   "architectures": ["linux/amd64"],
   "author": "Gary Schulte <gary.schulte@consensys.net> (https://github.com/garyschulte)",

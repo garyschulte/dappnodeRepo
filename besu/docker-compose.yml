@@ -4,17 +4,19 @@ services:
     build:
       context: ./build
       args:
-        UPSTREAM_VERSION: 22.4.3-SNAPSHOT
-    image: "besu.public.dappnode.eth:22.4.3"
+        UPSTREAM_VERSION: 22.7.0
+    image: "besu.public.dappnode.eth.besu-ropsten.public.dappnode.eth:22.7.0"
     restart: unless-stopped
+    stop_grace_period: 90s
     volumes:
       - "besu:/besu"
     environment:
       - >-
         EXTRA_OPTIONS=--data-storage-format=BONSAI --sync-mode=X_CHECKPOINT
-        --metrics-enabled=true
+        --metrics-enabled=true --p2p-port=40303 
+        --Xp2p-dns-discovery-server=8.8.8.8 --network=ropsten
     ports:
-      - "40303"
+      - 40303/tcp
       - 40303/udp
       - "8545"
       - "9545"

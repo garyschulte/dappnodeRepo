@@ -30,9 +30,15 @@
     }
   },
   "22.4.3": {
-    "hash": "/ipfs/QmVme1MzdhjTKcBmb32VPfErkoZjHHev1VXDop75Akyp86",
+    "hash": "/ipfs/QmXBoWe7iwPB3ft9LutcCXt5gqUvpVEZjLuqrDpnrr2Po3",
     "uploadedTo": {
-      "dappnode": "Fri, 10 Jun 2022 22:41:48 GMT"
+      "dappnode": "Fri, 17 Jun 2022 18:43:34 GMT"
+    }
+  },
+  "22.7.0": {
+    "hash": "/ipfs/QmdtvHztegSQ5ErMvmS1aDRe7qoneDg54By343WknMzL5J",
+    "uploadedTo": {
+      "dappnode": "Fri, 17 Jun 2022 19:14:41 GMT"
     }
   }
 }
